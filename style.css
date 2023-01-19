@@ -1,0 +1,27 @@
+body {
+    background-color: gold;
+}
+
+#titulo {
+    background-color: cornsilk;
+    color: var(--bs-primary);
+}
+
+canvas {
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-top: 50px;
+    animation-name: animacao;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animacao {
+    from {
+        box-shadow: 0 0 40px var(--bs-danger);
+    }
+    to {
+        box-shadow: 0 0 40px var(--bs-primary);
+    }
+}
